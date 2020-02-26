@@ -12,7 +12,6 @@ label {
     padding-left: .4em;
   }
   button {
-    margin-top: 20px;
     font-family: Arial;
     background-color: #eee;
     border: none;
@@ -20,6 +19,8 @@ label {
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
+    color: #333;
+    margin-bottom: 12px;
   }
   button:hover {
     background-color: #cfd8dc;
