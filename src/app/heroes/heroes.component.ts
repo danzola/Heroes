@@ -18,13 +18,6 @@ MessageService) {}
   ngOnInit() {
     this.getHeroes();
     }
-
-  selectedHero: Hero;
-  
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroService: Selected hero id=${hero.id}`);    
-    }
     
   getHeroes(): void {
     this.heroService.getHeroes()
