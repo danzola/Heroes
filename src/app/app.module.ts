@@ -20,6 +20,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { ImplicitAuthenticationService } from './implicit-authentication.service';
 
 @NgModule({
   imports: [
@@ -52,7 +53,10 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroSearchComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, HeroService, MessageService]
+  providers: [CartService, 
+    HeroService, 
+    MessageService,
+    ImplicitAuthenticationService]
 })
 export class AppModule { }
 
