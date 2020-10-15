@@ -21,6 +21,7 @@ import { MessageService } from './message.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { ImplicitAuthenticationService } from './implicit-authentication.service';
+import { DependenciesComponent } from './dependencies/dependencies.component';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import { ImplicitAuthenticationService } from './implicit-authentication.service
       { path: 'heroes', component: HeroesComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'detail/:id', component: HeroDetailsComponent },
+      { path: 'dependencies', component: DependenciesComponent },
     ]),
     FormsModule
   ],
@@ -50,7 +52,8 @@ import { ImplicitAuthenticationService } from './implicit-authentication.service
     HeroDetailsComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    DependenciesComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, 

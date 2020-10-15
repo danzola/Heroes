@@ -1,0 +1,17 @@
+<h2>Lista de dependencias</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Correo</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let dependency of dependencies">
+      <tr>
+        <th scope="row">{{dependency.Id}}</th>
+        <td>{{dependency.Nombre}}</td>
+        <td>{{dependency.CorreoElectronico}}</td>
+      </tr>
+    </tbody>
+  </table>
