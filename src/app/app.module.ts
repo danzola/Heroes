@@ -27,14 +27,14 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
-      { path: 'heroes', component: HeroesComponent },
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'detail/:id', component: HeroDetailsComponent },
-    ]),
+    { path: '', component: ProductListComponent },
+    { path: 'products/:productId', component: ProductDetailsComponent },
+    { path: 'cart', component: CartComponent },
+    { path: 'shipping', component: ShippingComponent },
+    { path: 'heroes', component: HeroesComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'detail/:id', component: HeroDetailsComponent },
+], { relativeLinkResolution: 'legacy' }),
     FormsModule
   ],
   declarations: [
