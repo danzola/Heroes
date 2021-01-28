@@ -10,7 +10,8 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class HeroService {
 
-  private heroesUrl = 'https://daasheroes.azurewebsites.net/Heroes';
+  //private heroesUrl = 'https://daasheroes.azurewebsites.net/Heroes';
+  private heroesUrl = 'assets/heroes.json';
 
   constructor(
     private http: HttpClient,

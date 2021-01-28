@@ -20,6 +20,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroChildComponent } from './component-interaction/hero-child/hero-child.component';
+import { HeroParentComponent } from './component-interaction/hero-parent/hero-parent.component';
 
 @NgModule({
   imports: [
@@ -49,7 +51,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailsComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HeroChildComponent,
+    HeroParentComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, HeroService, MessageService]
