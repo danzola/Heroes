@@ -22,6 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroChildComponent } from './component-interaction/hero-child/hero-child.component';
 import { HeroParentComponent } from './component-interaction/hero-parent/hero-parent.component';
+import { NameChildComponent } from './component-interaction/name-child/name-child.component';
+import { NameParentComponent } from './component-interaction/name-parent/name-parent.component';
 
 @NgModule({
   imports: [
@@ -36,6 +38,8 @@ import { HeroParentComponent } from './component-interaction/hero-parent/hero-pa
     { path: 'heroes', component: HeroesComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'detail/:id', component: HeroDetailsComponent },
+    { path: 'ci1', component: HeroParentComponent },
+    { path: 'ci2', component: NameParentComponent },
 ], { relativeLinkResolution: 'legacy' }),
     FormsModule
   ],
@@ -53,7 +57,9 @@ import { HeroParentComponent } from './component-interaction/hero-parent/hero-pa
     DashboardComponent,
     HeroSearchComponent,
     HeroChildComponent,
-    HeroParentComponent
+    HeroParentComponent,
+    NameChildComponent,
+    NameParentComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, HeroService, MessageService]
