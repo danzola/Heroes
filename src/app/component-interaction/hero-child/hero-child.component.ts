@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Hero } from '../../hero';
 
 @Component({
   selector: 'app-hero-child',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-child.component.css']
 })
 export class HeroChildComponent implements OnInit {
+
+  @Input() hero: Hero;
+  @Input('master') masterName: string;
 
   constructor() { }
 
